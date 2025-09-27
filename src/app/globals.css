@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Ultramed";
+  src: url("/fonts/ultramega/ultramegatest-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ultramed";
+  src: url("/fonts/ultramega/ultramegatest-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ultramed";
+  src: url("/fonts/ultramega/ultramegatest-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ultramed";
+  src: url("/fonts/ultramega/ultramegatest-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ultramed";
+  src: url("/fonts/ultramega/ultramegatest-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Flod Neue";
+  src: url("/fonts/LTflodeneue/LTFlodeNeue-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Flod Neue";
+  src: url("/fonts/LTflodeneue/LTFlodeNeue-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Flod Neue";
+  src: url("/fonts/LTflodeneue/LTFlodeNeue-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mundial Narrow";
+  src: url("/fonts/mundialNarrow/MundialNarrow-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mundial Narrow";
+  src: url("/fonts/mundialNarrow/MundialNarrow-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@theme {
+  --background-image-hero: url('/background/hero_bg.png');
+  --background-image-section: url('/background/section_bg.png');
+
+  --color-artic-green: #44BBAE;
+  --color-country-squire: #114B45;
+  --color-thamar-black : #191919;
+  --color-water-park : #56AB9C;
+  --color-nato-blue : #183244;
+  --color-hooker-green : #4C7865;
+  --color-billard-room: #548670;
+
+  --font-ultramega-test: "Ultramed", sans-serif;
+  --font-LTflodneue: "Flod Neue", sans-serif;
+  --font-mundial-narrow: "Mundial Narrow", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
