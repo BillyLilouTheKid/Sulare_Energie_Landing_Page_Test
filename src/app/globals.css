@@ -70,12 +70,58 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cantry";
+  src: url("/fonts/cantry/Cantry.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes titleFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fromFadeOutToBack {
+  from { opacity: 0; transform: translateY(-6em) scale(0.6); z-index: -1;}
+  to   { opacity: 0.8; transform: translateY(-4em) scale(0.8); z-index: 0;}
+}
+
+@keyframes fromBackToFadeOut {
+  from { opacity: 0.8; transform: translateY(-4em) scale(0.8); z-index: 0;}
+  to   { opacity: 0; transform: translateY(-6em) scale(0.6); z-index: -1;}
+}
+
+@keyframes fromBackToCenter {
+  from { opacity: 0.8; transform: translateY(-4em) scale(0.8); z-index: 0;}
+  to   { opacity: 1; transform: translateY(0) scale(1); z-index: 1;}
+}
+
+@keyframes fromCenterToBack {
+  from { opacity: 1; transform: translateY(0) scale(1); z-index: 1;}
+  to   { opacity: 0.8; transform: translateY(-4em) scale(0.8); z-index: 0;}
+}
+
+@keyframes fromCenterToFadeOut {
+  from { opacity: 1; transform: translateY(0) scale(1); z-index: 1;}
+  to   { opacity: 0; transform: translateY(3em) scale(1.2); z-index: 2;}
+}
+
+@keyframes fromFadeOutToCenter {
+  from { opacity: 0; transform: translateY(3em) scale(1.2); z-index: 2;}
+  to   { opacity: 1; transform: translateY(0) scale(1); z-index: 1;}
+}
 
 @theme {
   --background-image-hero: url('/background/hero_bg.png');
   --background-image-section: url('/background/section_bg.png');
+  --background-image-benefits: url('/images/solar_panel1.png');
+  --background-image-gradientPlusImage: linear-gradient(42deg, rgba(17, 75, 69, 0.8) 0%, rgba(69, 187, 174, 0.8) 100%), url('/background/section_bg.png');
 
   --color-artic-green: #44BBAE;
+  --color-russian-green: #64966C;
+  --color-yankees-blue: #183244;
   --color-country-squire: #114B45;
   --color-thamar-black : #191919;
   --color-water-park : #56AB9C;
@@ -86,7 +132,36 @@
   --font-ultramega-test: "Ultramed", sans-serif;
   --font-LTflodneue: "Flod Neue", sans-serif;
   --font-mundial-narrow: "Mundial Narrow", sans-serif;
+  --font-Cantry: "Cantry", sans-serif;
+ 
+  --animate-titleFadeIn: titleFadeIn 4s ease-out forwards;
+  --animate-fromFadeOutToBack: fromFadeOutToBack 0.8s ease-out forwards;
+  --animate-fromBackToFadeOut: fromBackToFadeOut 0.8s ease-out forwards;
+  --animate-fromBackToCenter: fromBackToCenter 0.8s ease-out forwards;
+  --animate-fromCenterToBack: fromCenterToBack 0.8s ease-out forwards;
+  --animate-fromCenterToFadeOut: fromCenterToFadeOut 0.8s ease-out forwards;
+  --animate-fromFadeOutToCenter: fromFadeOutToCenter 0.8s ease-out forwards;
 }
+
+.contentBoxVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: 1;
+  backdrop-filter: blur(9px);
+  filter: brightness(7px);
+  fill-opacity: 9%;
+}
+
+.contentBoxInvisible {
+  opacity: 0;
+  transform: translateY(3em) scale(1.2);
+  z-index: 2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: var(--background);
