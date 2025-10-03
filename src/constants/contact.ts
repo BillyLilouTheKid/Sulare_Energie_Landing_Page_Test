@@ -25,15 +25,14 @@ export const contactNavLinks: ContactNav[] = [
     {
         title: "Contact",
         links: [
-            "1356 via de suvale",
-            "chemin de torra 20290",
-            "Lucciana",
+            "1356 VIA DE SUVALE",
+            "CHEMIN DE TORRA 20290",
+            "LUCCIANA",
             "\u00A0",
             "06 25 85 39 68",
             "\u00A0",
             "contact-enr@sastpa.fr"
         ],
-        uppercase: true
     },
     {
         title: "Réalisation",

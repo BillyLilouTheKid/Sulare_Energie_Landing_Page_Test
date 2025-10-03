@@ -1,6 +1,7 @@
 'use client'
 
 import { carouselTitles } from "@/constants/features";
+import { carouselContentBoxList } from "@/constants/yourProjects";
 import { CarouselNavModeEnum } from "@/types/features";
 import { useState } from "react";
 
@@ -54,22 +55,17 @@ export default function ProjectCarousel() {
     const ContentBox = ({title, text, index} : {title?:string, text?:string, index:number}) => {
 
         return (
-            <div className={`bg-water-park/80 p-18 flex flex-row justify-center items-center tracking-wide text-balance font-LTflodneue font-light absolute w-8/10 backdrop-blur-md ${getAnimationForContentBox(index)}`}>
+            <div className={`bg-water-park/80 p-18 flex flex-row justify-end items-center tracking-wide text-balance font-LTflodneue font-light absolute w-full backdrop-blur-md ${getAnimationForContentBox(index)}`}>
                 <div className={`flex flex-col items-start justify-center pr-2 transition-opacity ${index === carouselIndex ? "opacity-100" : "opacity-0"}`}>
-                    <p className="font-LTflodneue font-normal text-sm text-white">TITRE RÉFÉRENCEMENT</p>
-                    <p className="font-LTflodneue font-light text-sm text-white/50 tracking-wide mt-8 text-balance">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
+                    <p className="font-LTflodneue font-normal text-sm text-white tracking-widest">{title}</p>
+                    <p className="font-LTflodneue font-light text-sm text-white/50 tracking-wide mt-8 text-balance">{text}</p>
                 </div>
             </div>
         );
     };
 
     return (
-        <div className="w-full h-full grid grid-cols-5">
+        <div className="w-full h-full grid grid-cols-5 gap-x-26">
             <div className="col-start-1 col-span-2 flex flex-row justify-end items-center gap-x-10">
                 <div className="flex flex-col justify-center items-center gap-y-2">
                     <svg viewBox="0 0 24 24" className={`w-5 h-5 text-white cursor-pointer hover:w-5.5 hover:h-5.5 transition-all`} onClick={()=>changeIndex(-1)}>
@@ -87,10 +83,10 @@ export default function ProjectCarousel() {
                     }
                 </div>
             </div>
-            <div className="col-span-3 flex flex-row justify-center items-center relative px-10">
+            <div className="col-span-3 flex flex-row justify-center items-center relative">
                 {
-                    carouselTitles.map((title, index)=> 
-                        <ContentBox key={title} index={index}/>
+                    carouselContentBoxList.map((content, index)=> 
+                        <ContentBox key={content.title + index} {...content} index={index}/>
                     )
                 }
             </div>

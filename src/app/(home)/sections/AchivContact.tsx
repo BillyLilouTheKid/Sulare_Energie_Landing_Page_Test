@@ -17,7 +17,7 @@ export default function AchivContact() {
                                 return <Image key={link.alt} {...link} alt={link.alt}/>
                             }
                             else {
-                                return <p key={link + index} className={`font-mundial-narrow font-light tracking-wide text-xs text-white/50 whitespace-pre-line ${uppercase && "uppercase"}`}>{link}</p>;
+                                return <p key={link + index} className={`font-mundial-narrow font-light tracking-wide text-xs text-white/50 whitespace-pre-line ${uppercase && "uppercase"} tracking-widest`}>{link}</p>;
                             }
                         })
                     }
@@ -28,7 +28,7 @@ export default function AchivContact() {
 
     return (
             <div className="w-screen h-screen bg-gradientPlusImage bg-cover bg-[center_55%] grid grid-rows-10 p-8">
-                <div id="réalisations" className="row-start-1 row-span-6 bg-white grid grid-rows-4 p-20">
+                <div id="réalisation" className="row-start-1 row-span-6 bg-white grid grid-rows-4 p-20">
                     <div className="row-start-1 row-span-1 flex flex-row justify-between items-center mb-20">
                         <p className="font-ultramega-test font-normal text-black text-4xl">Découvrez nos <span className="text-hooker-green">réalisations</span></p>
                         <DiscoverButton/>

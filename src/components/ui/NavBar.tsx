@@ -28,7 +28,7 @@ export default function NavBar() {
                         <a 
                             key={nav.title} 
                             href={nav.href}
-                            className={`cursor-pointer ${nav.title === currentLinkSelected && "text-russian-green"}`}
+                            className={`cursor-pointer ${nav.title === currentLinkSelected && "text-russian-green font-bold"}`}
                             onClick={()=>handleNav(nav.title)}
                         >
                             {nav.title}

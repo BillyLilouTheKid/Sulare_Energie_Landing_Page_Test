@@ -1,3 +1,5 @@
+# Sulare_Energie_Landing_Page_Test
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +36,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Legal Notice
+This project is a coding test based on a design created in Adobe XD for **Les Éditions Corses**.  
+
+**Les Éditions Corses** is the property of its respective owners.  
+Adobe XD is a product of Adobe Inc. and is the property of Adobe.  
+
+This project is not affiliated with, endorsed by, or sponsored by either **Les Éditions Corses** or **Adobe Inc.**.

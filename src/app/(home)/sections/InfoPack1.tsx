@@ -7,8 +7,8 @@ export default function InfoPack1() {
         <div className="bg-white px-16 flex flex-col items-center w-full">
             <div id="bureau_études" className="w-full h-[400px] grid grid-cols-6 gap-x-12 my-20">
                 <div className="h-full col-start-1 col-span-2 flex flex-col items-start pr-2 text-black">
-                    <p className="font-ultramega-test font-medium text-5xl/14">L&apos;énergie Qui Vous <span className="text-artic-green">Éclaire</span></p>
-                    <p className="font-LTflodneue font-normal mt-8">TITRE RÉFÉRENCEMENT</p>
+                    <p className="font-ultramega-test font-medium text-5xl/14">L&apos;énergie Qui<br/>Vous <span className="text-artic-green">Éclaire</span></p>
+                    <p className="font-LTflodneue font-normal mt-8 tracking-widest">TITRE RÉFÉRENCEMENT</p>
                     <p className="font-LTflodneue font-light text-xs tracking-wide my-8 text-balance">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -51,7 +51,7 @@ export default function InfoPack1() {
                     </div>
                     <div className="h-full col-span-2 flex flex-col items-start pr-2 text-black">
                         <p className="font-ultramega-test font-medium text-5xl/14">Photo<span className="text-artic-green">voltaïque</span></p>
-                        <p className="font-LTflodneue font-normal mt-8">TITRE RÉFÉRENCEMENT</p>
+                        <p className="font-LTflodneue font-normal mt-8 tracking-widest">TITRE RÉFÉRENCEMENT</p>
                         <p className="font-LTflodneue font-light text-xs tracking-wide my-8 text-balance">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 

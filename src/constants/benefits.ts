@@ -11,7 +11,7 @@ export const benefitsData: benefitsType[] = [
     },
         {
         srcIcon: "/icons/sulare_energia_icon.svg",
-        text: "Personel formé\n & qualifié"
+        text: "Personnel formé\n & qualifié"
     },
         {
         srcIcon: "/icons/chat.svg",

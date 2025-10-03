@@ -9,7 +9,7 @@ export default function YourProject() {
             <div id="bornes_de_recharges" className="w-8/10 h-[400px] grid grid-cols-6 gap-x-12 my-20">
                 <div className="h-full col-start-1 col-span-3 flex flex-col justify-end items-end pl-2 text-white text-right">
                     <p className="font-ultramega-test font-medium text-5xl/14">Borne de<br/> recharges</p>
-                    <p className="font-LTflodneue font-normal mt-8 tracking-wider">TITRE RÉFÉRENCEMENT</p>
+                    <p className="font-LTflodneue font-normal mt-8 tracking-widest">TITRE RÉFÉRENCEMENT</p>
                     <p className="font-LTflodneue font-light text-xs tracking-wide my-8 text-balance">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -33,7 +33,10 @@ export default function YourProject() {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex flex-row justify-center items-center my-10">
+            <div className="w-9/10 flex flex-col justify-center items-center my-15 px-10">
+                <div className="flex flex-col items-end justify-center w-full mb-20">
+                    <p className="font-ultramega-test font-medium text-5xl/14 text-white">Votre projet solaire</p>
+                </div>
                 <ProjectCarousel/>
             </div>
         </div>

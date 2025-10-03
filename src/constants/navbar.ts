@@ -18,12 +18,12 @@ export const navbarLink: navLinkType[] = [
         href: "#bornes_de_recharges"
     },
         {
-        title: "aide",
-        href: "#aide"
+        title: "aides",
+        href: "#aides"
     },
     {
-        title: "réalisations",
-        href: "#réalisations"
+        title: "réalisation",
+        href: "#réalisation"
     },
     {
         title: "contact",

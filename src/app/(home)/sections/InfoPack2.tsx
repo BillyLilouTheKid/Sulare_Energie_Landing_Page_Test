@@ -24,8 +24,8 @@ export default function InfoPack2() {
                     </div>
                 </div>
                 <div className="h-full col-span-2 flex flex-col items-start pr-2 text-black">
-                    <p className="font-ultramega-test font-medium text-5xl/14">L&apos;avenir En Pleine <span className="text-artic-green">Lumière</span></p>
-                    <p className="font-LTflodneue font-normal mt-8">TITRE RÉFÉRENCEMENT</p>
+                    <p className="font-ultramega-test font-medium text-5xl/14">L&apos;avenir En<br/>Pleine <span className="text-artic-green">Lumière</span></p>
+                    <p className="font-LTflodneue font-normal mt-8 tracking-widest">TITRE RÉFÉRENCEMENT</p>
                     <p className="font-LTflodneue font-light text-xs tracking-wide my-8 text-balance">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -49,8 +49,8 @@ export default function InfoPack2() {
                         />
                     </div>
                     <div className="h-full col-span-2 flex flex-col items-start pr-2 text-black">
-                        <p className="font-ultramega-test font-medium text-5xl/14">Sulare<span className="text-artic-green">Energia</span></p>
-                        <p className="font-LTflodneue font-normal mt-8">TITRE RÉFÉRENCEMENT</p>
+                        <p className="font-ultramega-test font-medium text-5xl/14">Sulare<br/><span className="text-artic-green">Energia</span></p>
+                        <p className="font-LTflodneue font-normal mt-8 tracking-widest">TITRE RÉFÉRENCEMENT</p>
                         <p className="font-LTflodneue font-light text-xs tracking-wide my-8 text-balance">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
